@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f7f0e7;
+}
+
+header{
+    background-color: #044048;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    /* border-radius: 0px 0px 30px 30px; */
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 2.0rem;
+    letter-spacing: 7px;
+    color: #f7f0e7;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.navlist li{
+    display: inline-block;
+    padding: 0px 20px;
+    cursor: pointer;
+    
+}
+    
+.navlist li a{
+    transition: all 0.3 ease 0s;
+    text-decoration: none;
+    color: #f7f0e7;
+}
+
+.navlist a:hover{
+    opacity: 0.8;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92vh;
+}
+
+/* Base html */
+.main{
+    display: flex;
+}
+
+.alert{
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.alert-error{
+    background-color: #FF9494;
+}
+.alert-success{
+    background-color: #4BB543;
+}
+.close-alert{
+    border-style: none;
+    font-size: 2rem;
+    background-color: transparent;
+}
+.close-alert:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+/* Sign up html */
+.signup-form-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #faf6f1;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+input{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-style: none;
+    border-radius: 10px;
+}
+.signup-text{
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.submit-button{
+    padding: 10px 20px;
+    background-color: #044048;
+    border-style: none;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    margin:0 auto;
+    margin-top: 40px;
+    display:block;
+}
