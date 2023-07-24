@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}Changed{% endblock %}
+
+{% block content %}
+<section class="home-container">
+<div class="add-note">
+    <form method="POST">
+        <h3 class="add-note-title">Add Note</h3>
+        <textarea name="note" id="note"></textarea>
+        <button type="submit" class="submit-button">Add Note</button>
+    </form>
+</div>
+<div class="notes-section">
+<div class="notes-list">
+    <h1 class="add-note-title">Notes</h1>
+    <ul class="list-group" id="notes">
+        {% for note in user.notes %}
+            <li class="list-item">{{ note.text }}
+                <button type="button" class="close close-alert" onClick="deleteNote({{ note.id }})">&times;</button>
+            </li>
+
+        {% endfor %}
+    </ul>
+</div>
+</div>
+</section>
+{% endblock %}
