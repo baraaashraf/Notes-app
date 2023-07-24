@@ -39,7 +39,7 @@
         {% else %}
         <div role="alert" class="alert-success alert">
             <p>{{ message }}</p>
-            <button type="button" class="close-alert" id="close-alert">&times;</button>
+            <button type="button" class="close-alert" id="close-alert" onClick="closeFlash()">&times;</button>
         </div>
         {% endif %}
         {% endfor %}
